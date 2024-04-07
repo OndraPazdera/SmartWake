@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Název budíku -->
+    <EditText
+        android:id="@+id/alarmNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:text="Název budíku"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Čas budíku -->
+    <TextView
+        android:id="@+id/alarmTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="Čas budíku"
+        android:layout_below="@id/alarmNameEditText"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/selectedTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/alarmTimeLabel"
+        android:layout_below="@id/alarmNameEditText"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        tools:ignore="NotSibling" />
+
+    <!-- Hudba -->
+    <EditText
+        android:id="@+id/musicTypeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:hint="Vybrat hudbu"
+        android:layout_below="@id/alarmTimeLabel"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Tlačítko pro výběr hudby -->
+    <Button
+        android:id="@+id/selectMusicButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vybrat hudbu"
+        android:layout_alignBaseline="@id/musicTypeEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Místo -->
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="Místo"
+        android:layout_below="@id/musicTypeEditText"
+        android:layout_marginTop="16dp"
+        tools:ignore="NotSibling" />
+
+    <!-- Tlačítko pro výběr místa -->
+    <Button
+        android:id="@+id/selectLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vybrat místo"
+        android:layout_alignBaseline="@id/locationEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Tlačítko pro vytvoření budíku -->
+    <Button
+        android:id="@+id/createAlarmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vytvořit budík"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/locationEditText"
+        tools:ignore="NotSibling" />
+
+</RelativeLayout>

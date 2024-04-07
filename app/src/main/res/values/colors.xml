@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Barva primárního rozhraní -->
+    <color name="colorPrimary">#FAF3E0</color>
+
+    <!-- Barva pro zdůraznění akcentů -->
+    <color name="colorAccent">#FF5733</color>
+
+    <!-- Barva pro primární tmavý akční pruh (ActionBar) -->
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="button_background">#333333</color>
+
+    <color name="backgroundColor">#9999CC</color>
+
+</resources>
